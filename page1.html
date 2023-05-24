@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="page.css">
+    <script>
+       window.onload = function () {
+            document.getElementById("search").addEventListener("click",textsearch);
+            document.getElementById("log").addEventListener("click",function (){
+                window.open("login.html")
+            });
+        }
+        function textsearch(){
+           var x= document.getElementById("input").value;
+           if(x=="选项1"){
+            alert("选项1");
+           }
+           else if(x=="选项2"){
+            alert("选项2");
+           }
+           else if(x=="选项3"){
+            alert("选项3");
+           }
+           else{
+            alert("您查询的内容不存在！");
+           }
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>第一页</h1>
+    </header>
+    <nav>
+        <input type="text" id="input">
+        <button type="button" id="search">查询</button>
+        <button type="button" id="log">注销</button>
+    </nav>
+    <article>
+        <table>
+
+            <tr>
+                <td rowspan="4">
+                    <img src="page/images/chinese.jpg" alt="chinese" width="100" height="100">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="choice">选项1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>云南省与东南亚多国接壤，与南亚相近。在”一带一路”建设过程中云南积极发展对南亚东南亚关系，提出建设构建面向南亚东南亚的辐射中心。</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="date">2023年3月4日</p>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td rowspan="4">
+                    <img src="page/images/english.jpg" alt="english" width="100" height="100">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="choice">选项2</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>云南省与东南亚多国接壤，与南亚相近。在”一带一路”建设过程中云南积极发展对南亚东南亚关系，提出建设构建面向南亚东南亚的辐射中心。</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="date">2023年3月4日</p>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td rowspan="4">
+                    <img src="page/images/math.jpg" alt="math" width="100" height="100">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="choice">选项3</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>云南省与东南亚多国接壤，与南亚相近。在”一带一路”建设过程中云南积极发展对南亚东南亚关系，提出建设构建面向南亚东南亚的辐射中心。</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="date">2023年3月4日</p>
+                </td>
+            </tr>
+
+
+        </table>
+    </article>
+    <aside>
+        <a href="page2.html">点击到第二页</a>
+    </aside>
+    <footer>
+        <p class="whitetext">页脚</p>
+    </footer>
+</body>
+
+</html>
